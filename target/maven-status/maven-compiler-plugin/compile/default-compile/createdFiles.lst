@@ -1,0 +1,11 @@
+com/magical/arena/models/Player.class
+com/magical/arena/factories/PlayerFactory.class
+com/magical/arena/services/ArenaService.class
+com/magical/arena/models/Arena.class
+com/magical/arena/services/ConsoleInputService.class
+com/magical/arena/services/InputService.class
+com/magical/arena/ArenaApplication.class
+com/magical/arena/utility/LoggerUtil.class
+com/magical/arena/facades/GameFacade.class
+com/magical/arena/services/GameService.class
+com/magical/arena/utility/DiceUtil.class

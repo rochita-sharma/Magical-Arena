@@ -1,0 +1,6 @@
+#Magical-Arena
+Problem Statement:
+Design a Magical Arena. Every Player is defined by a "health" attribute, "strength" attribute, and an "attack" attribute - all positive integers. The player dies if his health attribute touches 0. Any two players can fight a match in the arena. Players attack in turns. Attacking player rolls the attacking dice and the defending player rolls the defending dice. The "attack" value multiplied by the outcome of the attacking dice roll is the damage created by the attacker. The defender "strength" value, multiplied by the outcome of the defending dice is the damage defended by the defender. Whatever damage created by the attacker which is in excess of the damage defended by the defender will reduce the "health" of the defender. The game ends when any player's health reaches 0. The player with lower health attacks first at the start of a match.
+
+It's a LLD project with focus on implementing the problem statement using knowledge of core design patterns.
+It takes input of two players that will gonna play in the arena at a time and related attributed, attack and strength. It will play the whole game until any of the two players health reach 0 or less.
