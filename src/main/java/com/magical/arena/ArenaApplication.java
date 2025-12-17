@@ -17,9 +17,7 @@ public class ArenaApplication {
 		ConfigurableApplicationContext context =
                 SpringApplication.run(ArenaApplication.class, args);
         GameService gameService = context.getBean(GameService.class);
-        Player playerA = gameService.getPlayerInput(1);
-        Player playerB = gameService.getPlayerInput(2);
-        GameFacade game = new GameFacade(playerA, playerB);
+        GameFacade game = new GameFacade(gameService);
         game.startFight();
 	}
 

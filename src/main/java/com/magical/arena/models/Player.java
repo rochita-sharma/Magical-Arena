@@ -1,28 +1,15 @@
 package com.magical.arena.models;
 
-import lombok.Data;
-import org.springframework.stereotype.Component;
+import com.magical.arena.interfaces.IPlayer;
 
-@Data
-@Component
-public class Player {
-    private String name;
-    private Integer health;
-    private Integer strength;
-    private Integer attack;
 
-    public Player() {
-
-    }
+public class Player extends IPlayer {
 
     public Player(String name, Integer health, Integer strength, Integer attack) {
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
-        this.attack = attack;
+        super(name, health, strength, attack);
     }
-
+    @Override
     public boolean isAlive() {
-        return this.health > 0;
+        return health > 0;
     }
 }

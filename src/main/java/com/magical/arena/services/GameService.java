@@ -1,6 +1,7 @@
 package com.magical.arena.services;
 
 import com.magical.arena.factories.PlayerFactory;
+import com.magical.arena.interfaces.IPlayer;
 import com.magical.arena.models.Player;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public class GameService {
         this.playerFactory = playerFactory;
     }
 
-    public Player getPlayerInput(int playerNumber) {
+    public IPlayer getPlayerInput(int playerNumber) {
         String name = inputService.readString("Enter name for Player " + playerNumber + ": ");
         Integer health = inputService.readPositiveInt("Enter health for " + name +": ");
         Integer strength = inputService.readPositiveInt("Enter Strength for " + name +": ");

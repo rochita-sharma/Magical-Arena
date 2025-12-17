@@ -26,7 +26,7 @@ public class ConsoleInputService implements InputService {
             String input = scanner.nextLine().trim();
 
             try{
-                int value = Integer.parseInt(input);
+                Integer value = Integer.parseInt(input);
                 if(value > 0) {
                     return value;
                 }

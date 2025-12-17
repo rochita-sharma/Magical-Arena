@@ -1,5 +1,6 @@
 package com.magical.arena.models;
 
+import com.magical.arena.interfaces.IPlayer;
 import lombok.Data;
 import org.springframework.stereotype.Component;
 
@@ -7,16 +8,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@Component
 public class Arena {
-     Player player1;
-     Player player2;
-     public Arena(Player player1, Player player2) {
+     private final IPlayer player1;
+     private final IPlayer player2;
+     public Arena(IPlayer player1, IPlayer player2) {
          this.player1 = player1;
          this.player2 = player2;
      }
-    public List<Player> getAttackerAndDefender(){
-        List<Player> playerList = new ArrayList<>();
+    public List<IPlayer> getAttackerAndDefender(){
+        List<IPlayer> playerList = new ArrayList<>();
         if(this.player1.getHealth() <= this.player2.getHealth()) {
             playerList.add(this.player1);
             playerList.add(this.player2);

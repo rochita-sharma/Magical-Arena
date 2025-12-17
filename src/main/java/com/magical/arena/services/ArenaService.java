@@ -1,5 +1,6 @@
 package com.magical.arena.services;
 
+import com.magical.arena.interfaces.IPlayer;
 import com.magical.arena.models.Player;
 import com.magical.arena.utility.DiceUtil;
 import com.magical.arena.utility.LoggerUtil;
@@ -12,7 +13,7 @@ public class ArenaService {
 
     private static final Logger log = LoggerUtil.getLogger(ArenaService.class);
 
-    public static void playRound(Player attacker, Player defender) {
+    public static void playRound(IPlayer attacker, IPlayer defender) {
         final int attackRoll = DiceUtil.rollDice();
         final int defenceRoll = DiceUtil.rollDice();
         int attackValue = attacker.getAttack() * attackRoll;
