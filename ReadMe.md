@@ -4,3 +4,8 @@ Design a Magical Arena. Every Player is defined by a "health" attribute, "streng
 
 It's a LLD project with focus on implementing the problem statement using knowledge of core design patterns.
 It takes input of two players that will gonna play in the arena at a time and related attributed, attack and strength. It will play the whole game until any of the two players health reach 0 or less.
+
+How to play?
+- Start the Java app in any of your IDE's
+- Enter the values in the cli that're asked to enter.
+- And the fight will start between two player until one wins.
